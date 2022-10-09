@@ -29,3 +29,10 @@ E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\obj\Debug\net6.0\refint\St
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\obj\Debug\net6.0\StudentApi.pdb
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\obj\Debug\net6.0\StudentApi.genruntimeconfig.cache
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\obj\Debug\net6.0\ref\StudentApi.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
