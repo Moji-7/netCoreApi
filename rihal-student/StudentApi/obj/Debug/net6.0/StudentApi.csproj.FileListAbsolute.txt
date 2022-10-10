@@ -36,3 +36,5 @@ E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\AutoMapper.dll
+E:\trade-me\_1401\netCoreApi\rihal-student\StudentApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

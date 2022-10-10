@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hh8DIsmebL8Nw0up4Uub3cJGYicTLJBEC0B5WgHE0pStBaGwCUN4FiyGsXDa6x3TM5j0XU40jrtsgCumlzYgzg==",
+  "dgSpecHash": "KPivEtkqb/uzfdhPdDavVTKA4cM7GvPTzdHmfklvGQzESpCJXzc1BbkLIxyffPBsjEd8kO1gEaTjyk+l7R6YNQ==",
   "success": true,
   "projectFilePath": "E:\\trade-me\\_1401\\netCoreApi\\rihal-student\\StudentApi\\StudentApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.9\\microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
-    "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
     "C:\\Users\\M_PourMirzaei\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.9\\microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",

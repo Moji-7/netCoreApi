@@ -5,7 +5,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-namespace StudentApi.Core.Services;
+namespace StudentApi.Core.Services.Auth;
 
     public class TokenService : ITokenService
     {
@@ -62,6 +62,19 @@ namespace StudentApi.Core.Services;
             return true;
         }
 
-   
+    // public UserDTO GetCurrentUser()
+    //     {
+    //         var identity = HttpContext.Current.User.identity as ClaimsIdentity;
+    //         if (identity != null)
+    //         {
+    //             var userClaims = identity.Claims;
+    //             return new UserDTO
+    //             {
+    //                 UserName = userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Name)?.Value,
+    //                 Role = userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value
+    //             };
+    //         }
+    //         return null;
+    //     }
 }
 
