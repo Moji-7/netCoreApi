@@ -29,23 +29,41 @@ public class LoginController : ControllerBase
 
 
 
+    [HttpPost("Register")]
+    public async Task<ActionResult<UserDTO>> Register([FromBody] User userRegister)
+    {
+        try
+        {
+            if (userRegister == null || !ModelState.IsValid)
+                return BadRequest();
+            UserDTO newUser = await _userService.GetUserByName(userRegister.UserName);
+            //return newUser;
+            if (newUser is UserDTO)
+                return StatusCode(StatusCodes.Status409Conflict, "user exist");
+            userRegister = await _userService.Insert(userRegister);
+            return CreatedAtAction(nameof(GetUserById), new { id = userRegister.ID }, userRegister);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest();
+        }
+    }
+
     [AllowAnonymous]
     [Route("login")]
     [HttpPost]
-    public async Task<ActionResult> Login([FromBody] User userModel)
+    public async Task<ActionResult<UserDTO>> Login([FromBody] UserDTO userModel)
     //ActionResult Login([FromBody] UserLogin userLogin)
     {
         if (string.IsNullOrEmpty(userModel.UserName) || string.IsNullOrEmpty(userModel.Password))
         {
             return (BadRequest());
         }
-        IActionResult response = Unauthorized();
-        var validUser = await GetUser(userModel);
-        //return validUser;
+        var validUser = await _userService.GetUserByName(userModel.UserName);
+        // return validUser;
         if (validUser != null)
         {
             generatedToken = _tokenService.BuildToken(_config["Jwt:Key"].ToString(), _config["Jwt:Issuer"].ToString(), validUser);
-
 
             if (generatedToken != null)
             {
@@ -62,13 +80,24 @@ public class LoginController : ControllerBase
             return (BadRequest("Error"));
         }
     }
-
-    private async Task<UserDTO> GetUser(User userModel)
+    [HttpGet("{id:int}")] // GET /api/test2/int/3
+    public async Task<ActionResult<UserDTO>> GetUserById(int id)
     {
-        // Write your code here to authenticate the user     
-        // return _studentservice.GetById(userModel);
-        return await _userService.GetUser(userModel);
+        return await _userService.GetUserById(id);
+    }
 
+    [HttpGet]
+    [Route("all")]
+    public async Task<ActionResult<List<User>>> GetAll()
+    {
+        try
+        {
+            return await _userService.GetAll();
+        }
+        catch (System.Exception)
+        {
+            return BadRequest();
+        }
     }
 
     // [Authorize]

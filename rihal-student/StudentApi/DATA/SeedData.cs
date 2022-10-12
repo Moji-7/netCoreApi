@@ -27,7 +27,9 @@ namespace StudentApi.Data
                 context.Users.AddRange(
                     new User
                     {
-                        UserName = "mojtaba",
+                        FirstName = "mojtaba",
+                        LastName="mirzaei",
+                        UserName ="mirzaei_7@yahoo.com",
                         Password = "110",
                     }
                 );

@@ -31,7 +31,7 @@ public class StudentController : ControllerBase
     }
 
     //[Route("Admins")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     [HttpGet(Name = "name")]
     public async Task<ActionResult<MyType[]>> Get()
     {
@@ -40,6 +40,8 @@ public class StudentController : ControllerBase
             name = Random.Shared.Next(-20, 55).ToString()
         }).ToArray();
     }
+
+
     public class MyType
     {
         public string name { get; set; }
